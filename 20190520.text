@@ -1,0 +1,190 @@
+﻿{
+'source': 
+<pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacf876390>, 'mode': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace2efdd8>, 
+
+'resolution': 
+<pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace2efd68>,
+
+'page-width': 
+<pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace2efcf8>, 
+
+'page-height':
+<pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace2efcc0>, 
+
+'tl-x':
+<pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace2efb70>,
+
+'tl-y': 
+<pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace2efc88>, 
+
+'br-x': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace2efc18>, 
+
+'br-y': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace2efba8>,
+
+'brightness': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacf8c9d68>, 
+
+'contrast': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03630>, 
+
+'gamma': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03668>, 
+
+'threshold': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda036a0>, 
+
+'rif': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda036d8>,
+
+'ht-type': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03710>,
+
+'ht-pattern': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03748>, 
+
+'outline': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03780>, 
+
+'emphasis': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda037b8>,
+
+'separation': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda037f0>,
+
+'mirroring': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03828>, 
+
+'wl-follow': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03860>, '
+
+bp-filter': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03898>,
+
+'smoothing': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda038d0>, 
+
+'gamma-curve': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03908>,
+
+'threshold-curve': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03940>,
+
+'threshold-white': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03978>, 
+
+'noise-removal': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda039b0>,
+
+'matrix-5x5': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda039e8>, 
+
+'matrix-4x4': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03a20>,
+
+'matrix-3x3': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03a58>,
+
+'matrix-2x2': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03a90>, 
+
+'variance': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03ac8>, 
+
+'awd': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03b00>, 
+
+'ald': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03b38>,
+
+'compression': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03b70>, 
+
+'compression-arg': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03ba8>,
+
+'df-action': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03be0>, 
+
+'df-skew': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03c18>,
+
+'df-thickness': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03c50>, 
+
+'df-length': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03c88>, 
+
+'df-diff': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03cc0>,
+
+'df-recovery': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03cf8>, 
+
+'paper-protect': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03d30>, 
+
+'adv-paper-protect': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03d68>, 
+
+'staple-detect': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03da0>, 
+
+'bgcolor': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03dd8>,
+
+'dropoutcolor': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03e10>, 
+
+'buffermode': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03e48>, 
+
+'prepick': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03e80>, 
+
+'overscan': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03eb8>, 
+
+'sleeptimer': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03ef0>, 
+
+'offtimer': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03f28>, 
+
+'duplexoffset': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03f60>, 
+
+'greenoffset': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03f98>,
+
+'blueoffset': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbacda03fd0>, 
+
+'lowmemory': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308048>, 
+
+'side': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308080>, 
+
+'hwdeskewcrop': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3080b8>, 
+
+'swdeskew': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3080f0>, 
+
+'swdespeck': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308128>, 
+
+'swcrop': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308160>, 
+
+'swskip': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308198>, 
+
+'halt-on-cancel': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3081d0>, 
+
+'endorser-options': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308208>, 
+
+'endorser': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308240>, 
+
+'endorser-bits': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308278>, 
+
+'endorser-val': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3082b0>, 
+
+'endorser-step': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3082e8>,
+
+'endorser-y': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308320>,
+
+'endorser-font': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308358>, 
+
+'endorser-dir': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308390>,
+
+'endorser-side': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3083c8>,
+
+'endorser-string': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308400>, 
+
+'top-edge': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308438>, 
+
+'a3-paper': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308470>, 
+
+'b4-paper': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3084a8>, 
+
+'a4-paper': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3084e0>, 
+
+'b5-paper': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308518>, 
+
+'page-loaded': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308550>, 
+
+'omr-df': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308588>, 
+
+'cover-open': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3085c0>,
+
+'power-save': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3085f8>, 
+
+'email': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308630>, 
+
+'manual-feed': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308668>,
+
+'scan': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3086a0>, 
+
+'function': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3086d8>, 
+
+'ink-low': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308710>, 
+
+'double-feed': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308748>,
+
+'error-code': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308780>, 
+
+'skew-angle': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3087b8>,
+
+'ink-remain': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace3087f0>,
+
+'duplex': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308828>,
+
+'density': <pyinsane2.sane.abstract_proc.ScannerOption object at 0x7fbace308860>}

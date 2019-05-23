@@ -1,0 +1,28 @@
+#python中获取当前的绝对路径
+
+使用os模块
+    import os
+    os.getcwd()
+    os.path.abspath(os.path.dirname(__file__))
+
+#获取上级目录
+
+    import os 
+
+    os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+    os.path.abspath(os.path.dirname(os.getcwd()))
+    os.path.abspath(os.path.json(os.getcwd(),"../.."))
+
+
+#os.walk()
+    os.walk(top,[topdown=True[,onerror=None,[followlinks=False]]])
+
+
+    top --所要便利的目录地址，返回的是三个元素（root，dirs，files）
+        root 是当前遍历的文件夹本身的地址
+        dirs 内容是文件夹中的所有的目录的名字（不包括子目录）
+        files内容是该文件夹中所有的文件（不包括子目录）
+
+    topdown  是否建立子文件夹
+    onerror 需要一个callable对象，当walk异常时候会调用
+

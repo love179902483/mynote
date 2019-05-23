@@ -1,0 +1,26 @@
+test!
+呵呵
+test!
+
+conda新建环境
+conda create --name py3 python=3.6.8
+
+
+#查看创建的环境
+conda info --envs(指创建环境的名称)
+
+#激活py3
+source activate py3
+
+
+#安装 opencv
+pip install opencv-contrib-python
+
+#安装matplotlib
+pip install matplotlib                     
+
+vscode 格式化代码快捷键：
+On Windows Shift + Alt + F
+On Mac Shift + Option + F
+On Ubuntu Ctrl + Shift + I 
+

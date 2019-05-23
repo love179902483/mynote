@@ -1,0 +1,23 @@
+
+pyinsane2 mode
+
+这是一个list 其中包含 ['Lineart', 'Halftone', 'Gray', 'Color']
+device.options['mode'].constraint 
+
+***Halftone:
+	机器创建1位黑白图像。图像只包含黑色和白色。
+***Gray:
+	机器将创建8位黑白图像。图像包含黑色、白色和中间灰
+
+
+
+['ADF Front', 'ADF Back', 'ADF Duplex']
+device.options['source'].constraint
+
+***ADF Front
+	扫面正面
+***ADF Back
+	扫描反面
+***ADF Duplex
+	扫描双面
+ 
