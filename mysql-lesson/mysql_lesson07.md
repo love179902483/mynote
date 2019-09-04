@@ -27,11 +27,11 @@
    SELECT <select_list> FROM TABLE A A RIGHT JOIN TABLE B ON A.Key = B.Key WHERE A.Key IS NULL
    ```
 
-6. ##### OUTER_JOIN
+6. ##### OUTER_JOIN (mysql没有outer join)
    ```
     SELECT <select_list> FROM TABLE A A FULL OUTER JOIN TABLE B ON A.Key = B.Key
    ```
-7. ##### OUTER_JOIN
+7. ##### OUTER_JOIN (mysql没有outer join)
    ```
     SELECT <select_list> FROM TABLE A A FULL OUTER JOIN TABLE B ON A.Key = B.Key WHERE A.Key IS NULL OR B.Key IS NULL
    ```
