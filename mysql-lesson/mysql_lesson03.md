@@ -11,8 +11,14 @@
   ```
 * #### 修改mysql默认字符集以及存储路径
   ```
+    查看字符集
     show variables like "%char%"
     show variables like "%charset%"
   ```
-
+  ![avatar](https://raw.githubusercontent.com/love179902483/mynote/master/mysql-lesson/photos/lesson_003.png)
   
+    * ###### 修改my.cnf
+
+    ![avatar](https://raw.githubusercontent.com/love179902483/mynote/master/mysql-lesson/photos/lesson_003_02.png)
+    
+    ![avatar](https://raw.githubusercontent.com/love179902483/mynote/master/mysql-lesson/photos/lesson_003_03.png)
