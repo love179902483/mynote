@@ -1,4 +1,4 @@
-### mysql lesson04
+### mysql lesson04 （mysql配置文件）
 
 * ##### log-bin 
   用于主从复制,二进制日志
