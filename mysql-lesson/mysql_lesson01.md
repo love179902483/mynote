@@ -8,3 +8,4 @@
   ```
     chkconfig --list | grep mysql
   ```
+  ![avatar](../../photos/1.png)
