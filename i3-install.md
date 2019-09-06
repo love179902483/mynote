@@ -50,7 +50,7 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 ```
-> chinese kuangkuang 
+> [chinese kuangkuang](https://blog.csdn.net/UNIONDONG/article/details/96495534) 
 ```
 sudo pacman -S wqy-microhei 
 ```
