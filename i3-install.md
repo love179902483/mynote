@@ -50,7 +50,10 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS="@im=fcitx"
 ```
-
+> chinese kuangkuang 
+```
+sudo pacman -S wqy-microhei 
+```
 
 #### 3. [Install vim-markdown](https://github.com/plasticboy/vim-markdown)
 
