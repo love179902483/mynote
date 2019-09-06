@@ -30,5 +30,8 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 
 #### 3. [Install vim-markdown](https://github.com/plasticboy/vim-markdown)
 
-> [first install vundle](git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim)
+>  first install vundle 
+   ```
+   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim)
+   ```
 > [second install markdown-vim-mode/](https://github.com/plasticboy/vim-markdown)
