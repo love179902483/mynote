@@ -54,6 +54,8 @@ export XMODIFIERS="@im=fcitx"
 ```
 sudo pacman -S wqy-microhei 
 ```
+> pacman -S fcitx-qt4
+
 
 #### 3. [Install vim-markdown](https://github.com/plasticboy/vim-markdown)
 
