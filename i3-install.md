@@ -27,6 +27,14 @@ SigLevel = Optional TrustAll
 
 Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
   ```
+> update software database
+```
+sudo pacman -Sy
+```
+> update keyring
+```
+sudo pacman -S archlinuxcn-keyring
+```
 
 #### 3. [Install vim-markdown](https://github.com/plasticboy/vim-markdown)
 
