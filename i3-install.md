@@ -64,3 +64,8 @@ sudo pacman -S wqy-microhei
    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim)
    ```
 > [second install markdown-vim-mode/](https://github.com/plasticboy/vim-markdown)
+
+#### 4. [ll command not found](https://blog.csdn.net/qq_27292113/article/details/69942507)
+>  vim ~/.bashrc 编辑文件   加入 alias ll=’ls -l’
+>  立即生效 source ~/.bashrc 或者 重新登录
+
