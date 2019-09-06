@@ -36,6 +36,22 @@ sudo pacman -Sy
 sudo pacman -S archlinuxcn-keyring
 ```
 
+
+> install Fcitx
+```
+sudo pacman -S fcitx
+sudo pacman -S fcitx-configtool
+sudo pacman -S fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5
+sudo pacman -S fcitx-sogoupinyin
+```
+> setting ~/.xprofile  or ~/.profile
+```
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+```
+
+
 #### 3. [Install vim-markdown](https://github.com/plasticboy/vim-markdown)
 
 >  first install vundle 
