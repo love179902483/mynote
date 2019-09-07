@@ -57,6 +57,9 @@ sudo pacman -S wqy-microhei
 > pacman -S fcitx-qt4
 
 
+> manjaro i3 config in  `/home/qinyu/.i3`
+
+
 #### 3. [Install vim-markdown](https://github.com/plasticboy/vim-markdown)
 
 >  first install vundle 
