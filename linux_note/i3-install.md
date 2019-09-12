@@ -78,6 +78,15 @@ https://github.com/suan/vim-instant-markdown
 >  vim ~/.bashrc 编辑文件   加入 alias ll=’ls -l’
 >  立即生效 source ~/.bashrc 或者 重新登录
 
+#### 5. [install fish shell](https://www.ostechnix.com/install-fish-friendly-interactive-shell-linux/)
 
 
+	`sudo pacman -S fish`
+	
+
+	
+> set fish shell as default shell
+
+	`chsh -s /usr/bin/fish`
+	
 
