@@ -1,40 +1,61 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-set number
-set t_Co=256
-set encoding=utf-8
 
 
-" highlight show current line
-set cursorline
+" .vimrc 借鉴
+" https://github.com/chxuan/vimplus/blob/master/.vimrc
+" 从vim导入nvim 
+" ln -s ~/.vimrc ~/.config/nvim/init.vim
 
-set list listchars=extends:❯,precedes:❮,tab:▸\ ,trail:˽
+
+" 通用设置
+set nocompatible                " be iMproved, required
+set number                      " 设置行号"
+set t_Co=256                    " 开启256颜色支持"
+syntax on                       " 自动语法高亮"
+set showcmd                     " 设置命令行高度"
+set laststatus=2                " 总是显示状态栏"
+syntax enable
+set cursorline                  " highlight show current line
+set virtualedit=block,onemore   " 允许光标出现在最后一个字符的后面
+set ruler                       " 总是显示光标位置
+
+
+" 编码设置
+set langmenu=zh_CN.UTF-8
+set helplang=cn
+set termencoding=utf-8
+set encoding=utf8
+set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
+
+
+" 代码缩进排版
+set autoindent                  "设置自动缩进"
+set smartindent                 "只能对齐方式"
+filetype indent on              "自适应不同语言的对齐方式"
+set expandtab                   "制表符扩展为空格"
+set nowrap                      "禁止折行"
+set smarttab                    " 在行和段开始处使用制表符
+set sidescroll=10               " 设置向右滚动字符数
 
 
 " start highlight in search 
 set hlsearch
 highlight Search ctermbg=yellow ctermfg=black
 highlight IncSearch ctermbg=black ctermfg=yellow
-highlight MatchParen cterm=underline ctermbg=NONE ctermfg=NONE
 
 
-" set the runtime path to include Vundle and initialize
-" set rtp+=~/.vim/bundle/Vundle.vim
+" 缓存设置
+set autowrite                   " 设置自动保存"
+set confirm                     " 处理未保存或只读文件的时候弹出确认"
 
-" Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
 
+" 插件列表
 call plug#begin('~/.vim/plugged')
-" auto completion
-" Plug 'roxma/nvim-completion-manager'
 
 " python source complete
 Plug 'zchee/deoplete-jedi'
 
-
+" vim terminal color plugin
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'itchyny/lightline.vim'
 
@@ -42,16 +63,24 @@ Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
+
 " auto pairs 
 Plug 'jiangmiao/auto-pairs'
 
+" code plugins
 " align symble
 Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
 
+Plug 'scrooloose/nerdtree'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
+" markdown plugins
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'suan/vim-instant-markdown', {'rtp': 'after'}
-
 
 Plug 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -69,19 +98,6 @@ Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
 
 
 " Markdown settings 
@@ -97,8 +113,31 @@ set conceallevel=2
 let g:vim_markdown_frontmatter=1
 
 
+" 主题
+" colorscheme palenight
+" colorscheme onedark
+let g:onedark_termcolors=256
+set background=dark
+
+
+" nerdtree
+nnoremap <silent> <leader>n :NERDTreeToggle<cr>
+inoremap <silent> <leader>n <esc> :NERDTreeToggle<cr>
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
+let g:NERDTreeHighlightFolders = 1         
+let g:NERDTreeHighlightFoldersFullName = 1 
+let g:NERDTreeDirArrowExpandable='▷'
+let g:NERDTreeDirArrowCollapsible='▼'
+
+" 绑定快捷键 nerdtree
+map <C-l> :tabn<CR>
+map <C-h> :tabp<CR>
+map <C-n> :tabnew<CR>
+
 " color vim
-let g:airline_theme = "palenight"
+" let g:airline_theme = "palenight"
 if (has("nvim"))
   "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
@@ -110,9 +149,6 @@ endif
 if (has("termguicolors"))
   set termguicolors
 endif
-syntax enable
-set background=dark
-colorscheme palenight
 " 配色网站https://zhuanlan.zhihu.com/p/58188561
 
 " equires vim8 with has('python') or has('python3')
