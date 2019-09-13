@@ -87,6 +87,20 @@ https://github.com/suan/vim-instant-markdown
 	
 > set fish shell as default shell
 
-	`chsh -s /usr/bin/fish`
-	
+	chsh -s /usr/bin/fish
 
+#### 6. [Xcompmgr](https://wiki.archlinux.org/index.php/Xcompmgr_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)) set terminal opacity
+```
+	# install Xorg first
+	sudo pacman -S Xorg 
+	# install xcompmgr
+	sudo pacman -S Xcompmgr
+
+	# start Xcompmgr 
+	xcompmgr -c
+
+	# transset-df  (set opacity for programs)
+	sudo pacman -S transset-df
+
+	transset 0.6
+```
