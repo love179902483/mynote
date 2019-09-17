@@ -21,3 +21,6 @@
 	[ˈdedɪkeɪt] 奉献
 
 	Back on the island, he dedicated himself to politics.
+5. deprecate
+	 [ˈdeprəkeɪt] 强烈反对
+	 If you deprecate something, you criticize it.
