@@ -32,6 +32,8 @@ set autoindent                  "设置自动缩进"
 set smartindent                 "只能对齐方式"
 filetype indent on              "自适应不同语言的对齐方式"
 set expandtab                   "制表符扩展为空格"
+set ts=2
+
 set nowrap                      "禁止折行"
 set smarttab                    " 在行和段开始处使用制表符
 set sidescroll=10               " 设置向右滚动字符数
@@ -77,11 +79,21 @@ Plug 'scrooloose/nerdtree'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
+" python auto complete
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi', { 'for':'python' }
+
+"deoplete-jedi setting
+let g:deoplete#sources#jedi#server_timeout=100
+let g:deoplete#sources#jedi#statement_length=100
+let g:jedi#completions_enabled = 0
 " markdown plugins
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'suan/vim-instant-markdown', {'rtp': 'after'}
-
+" 格式化表格
+Plug 'dhruvasagar/vim-table-mode' 
 Plug 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plug 'L9'
@@ -111,7 +123,10 @@ let g:vim_markdown_no_default_key_mappings = 1
 let g:vim_markdown_emphasis_multiline = 0
 set conceallevel=2
 let g:vim_markdown_frontmatter=1
-
+" Markdown table-mode setting
+let g:table_mode_corner = '|'
+let g:table_mode_border=0
+let g:table_mode_fillchar=' '
 
 " 主题
 " colorscheme palenight
@@ -135,6 +150,7 @@ let g:NERDTreeDirArrowCollapsible='▼'
 map <C-l> :tabn<CR>
 map <C-h> :tabp<CR>
 map <C-n> :tabnew<CR>
+
 
 " color vim
 " let g:airline_theme = "palenight"
@@ -164,4 +180,22 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 let g:deoplete#enable_at_startup = 1
+"deoplete-jedi setting
+let g:deoplete#sources#jedi#server_timeout=100
+let g:deoplete#sources#jedi#statement_length=100
+let g:jedi#completions_enabled = 0
 
+" Markdown table mode 
+function! s:isAtStartOfLine(mapping)
+  let text_before_cursor = getline('.')[0 : col('.')-1]
+  let mapping_pattern = '\V' . escape(a:mapping, '\')
+  let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
+  return (text_before_cursor =~? '^' . ('\v(' . comment_pattern . '\v)?') . '\s*\v' . mapping_pattern . '\v$')
+endfunction
+
+inoreabbrev <expr> <bar><bar>
+          \ <SID>isAtStartOfLine('\|\|') ?
+          \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
+inoreabbrev <expr> __
+          \ <SID>isAtStartOfLine('__') ?
+          \ '<c-o>:silent! TableModeDisable<cr>' : '__'

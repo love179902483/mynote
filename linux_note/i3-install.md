@@ -104,3 +104,37 @@ https://github.com/suan/vim-instant-markdown
 
 	transset 0.6
 ```
+
+#### 7. [set timezone](http://justoldtime.blogspot.com/2013/08/manjaro.html)
+
+```
+        [handy@jarmano ~]$ timedatectl status
+```
+
+```
+        [handy@jarmano ~]$ timedatectl status
+              Local time: Mon 2013-07-08 10:21:32 WST
+          Universal time: Mon 2013-07-08 00:21:32 UTC
+                RTC time: Mon 2013-07-08 00:21:32
+                Timezone: Australia/Perth (WST, +800)
+             NTP enabled: no
+        NTP synchronized: no
+         RTC in local TZ: no
+              DST active: no
+         Last DST change: DST ended at
+                          Sun 2013-04-07 02:59:59 WST
+                          Sun 2013-04-07 02:00:00 WST
+         Next DST change: DST begins (the clock jumps one hour forward) at
+                          Sun 2013-10-06 01:59:59 WST
+                          Sun 2013-10-06 03:00:00 WST
+
+```
+
+```
+```
+        [handy@jarmano ~]$ sudo timedatectl set-ntp true
+        [handy@jarmano ~]$ sudo timedatectl set-ntp true
+```
+
+
+
