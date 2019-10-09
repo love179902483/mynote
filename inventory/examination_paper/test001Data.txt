@@ -1,0 +1,14 @@
+outframe：1160  1660
+
+
+studentNumberFrame: (440, 420)
+studentNumberPaddingTop : 10
+studentNumberPaddingLeft : 10
+
+multipleQuestionFrame: (720, 420)
+multipleQuestionPaddingLeft : 10
+
+
+
+
+pane: 40  20
